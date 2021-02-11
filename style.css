@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    
+}
+
+h2{
+    font-size: 31px;
+    font-family: 'Martel', serif;
+    color: #1763E9;
+    }
+    
+.headline{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.partners{
+    display: flex;
+    width: 75%;
+    height: 50%;
+    margin: 200px;
+    background-color: white;
+    flex-direction: column;
+
+
+}
+.partners-flex{
+    display: flex;
+   
+}
+
+.partners-column{
+    width: 33%;
+    padding-right: 20px;
+}
+
+.partners p{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #838383;
+    margin: 0px 0px 12.5px;
+    
+}
+
+h3{
+  margin-top: 10px;  
+  text-align: center;
+  font-family: 'Martel', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.picture{
+margin-left: 84px;   
+}
+
+.social_icons{
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #838383;
+    border-radius: 360px;
+    margin: 5px;
+}
+
+.circle a{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #838383; 
+    font-size: 15px;
+}
+
+.contact{
+    width: 50vw;
+    height: 40vh;
+    margin-left: 17%;
+    border: 1px solid #838383;
+    display: flex;    
+    position: relative;
+    z-index: 1;
+}
+
+.write_info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px
+}
+
+.field{
+    height: 15%;
+    margin: 0px 0px 20px 0px;
+    
+}
+
+.field_big{
+    height: 30%;
+}
+
+.button{
+    margin-top: 20px;
+    width: 145px;
+    height: 51px;
+    background-color: transparent;
+    color: #1763E9;
+    border: 1px solid #1763E9;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #1763E9;
+    color: white;
+
+}
+
+.get_in_touch img{
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.get_in_touch{}

@@ -13,6 +13,7 @@ h2{
     font-size: 31px;
     font-family: 'Martel', serif;
     color: #1763E9;
+    text-align: center;
     }
     
 .headline{
@@ -88,15 +89,35 @@ margin-left: 84px;
     margin-left: 17%;
     border: 1px solid #838383;
     display: flex;    
+    flex-direction: row;
+    position: absolute;
+    background-color: white;
+}
+
+.get_in_touch img{
     position: relative;
-    z-index: 1;
+    background-color: red;
+    width: 75vw;
+    height: 500px;
+    right: 480px;
+    top: 100px;
+    z-index: -1;
+}
+
+.parent{
+    position: relative;
+
 }
 
 .write_info{
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 40px
+    margin: 40px;
+}
+
+.our_info{
+    width: 50%;
 }
 
 .field{
@@ -126,10 +147,4 @@ margin-left: 84px;
 
 }
 
-.get_in_touch img{
-    position: absolute;
-    z-index: -1;
-    
-}
 
-.get_in_touch{}

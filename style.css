@@ -1,8 +1,254 @@
 *{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
+
+body{
+    background-color: white;
+        
+}
+
+.navigation_bar{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    text-align: right;
+    padding-right: 25%;
+    background: rgb(46,93,212);
+    background: linear-gradient(94deg, rgba(46,93,212,1) 0%, rgba(68,87,192,1) 50%, rgba(68,87,192,1) 100%);
+}
+
+nav img{
+    width: 100%;
+}
+
+.navigation_bar button{
+    height: 80px;
+    width: 80px;
+    margin-top: 10px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Hind Siliguri', sans-serif;
+
+}
+
+
+h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 59px;
+    font-family: 'Martel', sans-serif;
+    color: white;
+}
+
+nav p{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.discover {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    height: 55px;
+    width: 120px;
+    font-size: 23px;
+    font-family: 'Hind Siliguri', sans-serif;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+svg{
+    top: 50px;
+}
+
+h2{
+    font-size: 31px;
+    font-family: 'Martel', sans-serif;
+    color: #1763E9;
+    text-align: center;
+    margin-right: 30px;
+    line-height: 30px;
+    font-weight: 900;
+    }
+    
+.headline{
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.partners{
+    display: flex;
+    width: 75%;
+    height: 50%;
+    margin: 100px 0px 0px 250px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.partners-flex{
+    display: flex;
+   
+}
+
+.partners-column{
+    width: 33%;
+    padding-right: 20px;
+}
+
+.partners p{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #838383;
+    margin: 20px 0px 12.5px;
+    font-weight: 300;
+    
+}
+
+h3{
+  margin-top: 10px;  
+  text-align: center;
+  font-family: 'Martel', serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.picture{
+margin-left: 25%;   
+}
+
+.social_icons{
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social_icons a{
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #838383; 
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid #838383;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.social_icons a:hover {
+    background-color: #838383;
+    color: white;
+}
+
+.contact {
+    width: 50vw;
+    height: 40vh;
+    margin-left: 17%;
+    display: flex;    
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 2px 10px #838383;
+}
+
+.get_in_touch {
+    margin-top: 100px;
+}
+
+.get_in_touch img {
+    position: absolute;
+    width: 75vw;
+    top: 100px;
+}
+
+.parent {
+    position: relative;
+}
+
+.write_info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px;
+}
+
+.our_info {
+    width: 50%;
+    color: #838383;
+    padding: 40px 0px 0px 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.field{
+    height: 15%;
+    margin: 0px 0px 20px 0px;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #ddd;
+    padding: 10px;
+}
+
+input {
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+
+.focus-visible {
+    border-color: #1763e9;
+    outline: 0;
+    box-shadow: 0 0 8px #1763e9;
+}
+
+.field_big{
+    height: 30%;
+    font-family: 'Hind Siliguri', sans-serif;
+    color: #ddd;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.button{
+    margin-top: 20px;
+    width: 145px;
+    height: 51px;
+    background-color: transparent;
+    color: #1763E9;
+    border: 1px solid #1763E9;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #1763E9;
+    color: white;
+
+}
+
+
+
 
 .section-aboutus {
     width: 100%;
@@ -173,3 +419,4 @@
 .section-social-columns-column:hover i {
     color: #1763E9;
 }
+

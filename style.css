@@ -248,3 +248,175 @@ input {
 }
 
 
+
+
+.section-aboutus {
+    width: 100%;
+    font-family: 'Hind Siliguri', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-title {
+    color: #1763E9;
+    font-family: 'Martel', serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.section-title:nth-child(2) {
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+.section-aboutus-text, .section-customers-text {
+    width: 750px;
+    text-align: center;
+    font-size: 18px;
+    color: #838383;
+    font-weight: 300;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.section-aboutus-content-carousel {
+    margin-top: 100px;
+    position: relative;
+    width: 1100px;
+    height: 600px;
+}
+
+.section-aboutus-content-carousel-photo img {
+    max-width: 800px;
+    position: absolute;
+}
+
+.section-aboutus-content-carousel-secondphoto img {
+    max-width: 800px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.section-aboutus-content-frame {
+    width: 700px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    bottom: 0px;
+    padding: 60px 40px;
+    box-shadow: 0px 0px 20px 3px rgb(180, 180, 180);
+}
+
+.section-aboutus-content-frame-header-title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Martel', serif;
+    font-weight: 800;
+}
+
+.section-aboutus-content-frame-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-aboutus-content-frame-header-arrows {
+    display: flex;
+    gap: 20px;
+}
+
+.section-aboutus-content-frame-header-arrows-leftarrow, 
+.section-aboutus-content-frame-header-arrows-rightarrow {
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.section-aboutus-content-frame-header-arrows-leftarrow:hover, 
+.section-aboutus-content-frame-header-arrows-rightarrow:hover {
+    color: #1763E9;
+}
+
+/* customers */
+
+.section-customers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px 0px 0px;
+}
+
+/* footer */
+.footer {
+    position: relative;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    padding: 50px 0px 50px 0px;
+    gap: 60px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+    transition: all 0.3s;
+    margin-bottom: 60px;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.footer img {
+    width: 100%;
+}
+
+.footer-text {
+    position: absolute;
+    top: 90px;
+    left: 200px;
+    color: white;
+    font-family: 'Martel', serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.footer-icons {
+    position: absolute;
+    top: 90px;
+    right: 200px;
+    display: flex;
+    gap: 30px;
+}
+
+.section-social-columns-column {
+    border-radius: 60px;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.section-social-columns-column i {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-social-columns-column:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.section-social-columns-column:hover i {
+    color: #1763E9;
+}
+

@@ -17,6 +17,7 @@ body{
     padding-right: 25%;
     background: rgb(46,93,212);
     background: linear-gradient(94deg, rgba(46,93,212,1) 0%, rgba(68,87,192,1) 50%, rgba(68,87,192,1) 100%);
+    z-index: 1;
 }
 
 nav img{
@@ -185,6 +186,7 @@ margin-left: 25%;
 
 .parent {
     position: relative;
+    height: 90vh;
 }
 
 .write_info{

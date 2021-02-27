@@ -9,7 +9,6 @@ images.forEach(image => {
         singleImage.classList.add('modal-open')
         
         const oryginalSrc = image.getAttribute("data-original");
-        console.log(image.getAttribute("alt"))
         singleImage.src = `${oryginalSrc}`
 
     })
@@ -22,3 +21,14 @@ closeModal = () => {
 
 modal.addEventListener('click', closeModal)
 window.addEventListener('scroll', closeModal)
+
+
+const rafalImage = document.querySelector('.row_2 img')
+
+rafalImage.addEventListener('click', openModalV2 = () => {
+    modal.classList.add('modal-open')
+    singleImage.classList.add('modal-open')
+    
+    const oryginalSrc = rafalImage.getAttribute("data-original");
+    singleImage.src = `${oryginalSrc}`
+})

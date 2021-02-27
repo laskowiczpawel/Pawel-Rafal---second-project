@@ -450,7 +450,7 @@ input {
 .more{
     margin-top: 100px;
     display: grid;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 1fr 750px 1fr;
     grid-template-rows: 50% 50%;
     margin-bottom: 350px;
 }
@@ -465,7 +465,7 @@ input {
 }
 
 .more img{
-    width: 40vw;
+    width: 750px;
     transition: transform 0.25s ease;
     cursor: zoom-in;
 }
@@ -478,7 +478,6 @@ input[type=checkbox]:checked ~ label > img {
     transform: scale(1.5);
     cursor: zoom-out;
 }
-
 
 .more span{
     font-size: 18px;

@@ -17,7 +17,7 @@ body{
     padding-right: 25%;
     background: rgb(46,93,212);
     background: linear-gradient(94deg, rgba(46,93,212,1) 0%, rgba(68,87,192,1) 50%, rgba(68,87,192,1) 100%);
-    z-index: 1;
+    z-index: 2;
 }
 
 nav img{
@@ -99,7 +99,7 @@ h2{
     display: flex;
     width: 75%;
     height: 50%;
-    margin: 100px 0px 0px 250px;
+    margin: 100px 0px 0px 12%;
     background-color: white;
     flex-direction: column;
 }

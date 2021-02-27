@@ -31,3 +31,24 @@ function changePhoto() {
 
     
 }
+/*Scrollowanie */
+ 
+const nav = document.querySelector(".navigation_bar");
+const sectionOne = document.querySelector(".intro");
+
+const sectionOneOptions = {
+    rootMargin: "-300px 0px 0px 0px"
+};
+
+const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver){
+    entries.forEach(entry => {
+        if(!entry.isIntersecting){
+            nav.classList.add("navigation_bar_after_scroll")
+        } else {
+            nav.classList.remove("navigation_bar_after_scroll")
+        }
+    });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);

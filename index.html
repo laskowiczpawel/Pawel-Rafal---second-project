@@ -9,21 +9,24 @@
     <link rel="stylesheet" href="/Pawel-Rafal---second-project/style.css">
     <script src="https://kit.fontawesome.com/da579de088.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;700&family=Martel:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700;900&family=Martel:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="container">
         <!-- nawigacja -->
         <nav>
             <div class="navigation_bar">
-                <button onclick="location.href='http://127.0.0.1:5500/Pawel-Rafal---second-project/index.html'" type="button">Home</button>
-                <button onclick="location.href='https://google.pl'" type="button">Project</button>
+                <div class="buttons">
+                    <a href="http://127.0.0.1:5500/Pawel-Rafal---second-project/index.html"><button>Home</button></a>
+                    <a href="http://127.0.0.1:5500/Pawel-Rafal---second-project/VIEWS/projects.html"><button>Projects</button></a>
+                </div>
             </div>
+            <div class="intro">
             <h1>Mountain</h1>
             <p>Welcome to Mountain website. Agency in Berlin.</p>
             <button class="discover" onclick="location.href='https://google.pl'" type="button">Discover</button>
-            <img src="./IMG/wave-hero-background.svg" alt="wave bacground">
+            <img src="/Pawel-Rafal---second-project/IMG/wave-hero-background.svg" alt="wave bacground">
+        </div>
         </nav>
         <!-- koniec nawigacji -->
 
@@ -126,8 +129,6 @@
                
             </div>    
         </div>
-
-
         <!-- koniec partners -->
 
         <!-- customers -->
@@ -198,7 +199,6 @@
         
         <!-- koniec footer -->
     </div>
-
-    <script src="script.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

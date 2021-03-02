@@ -25,7 +25,7 @@
 }
 
 nav img{
-    width: 100%;
+    width: 1920px;
 }
 
 .navigation_bar button, .navigation_bar_projects button{
@@ -45,37 +45,35 @@ nav img{
     background-color: transparent;
 }
 
-h1{
+.intro {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
+    text-align: center;
+    color: white;
     transform: translate(-50%,-50%);
+}
+
+h1{
+    
     font-size: 59px;
     font-family: 'Martel', sans-serif;
-    color: white;
+    font-weight: 900;
 }
 
 nav p{
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     font-size: 18px;
     font-family: 'Hind Siliguri', sans-serif;
     color: white;
     text-transform: uppercase;
-    
 }
 
 .discover{
-    position: absolute;
-    top: 46%;
-    left: 50%;
+    margin-top: 30px;
     height: 55px;
     width: 120px;
     font-size: 23px;
     font-family: 'Hind Siliguri', sans-serif;
-    transform: translate(-50%,-50%);
     background-color: transparent;
     border: 1px solid white;
     border-radius: 5px;
@@ -87,11 +85,10 @@ svg{
 }
 
 h2{
-    font-size: 31px;
+    font-size: 28px;
     font-family: 'Martel', sans-serif;
     color: #1763E9;
     text-align: center;
-    margin-right: 30px;
     line-height: 30px;
     font-weight: 900;
     margin-bottom: 5px;
@@ -104,22 +101,23 @@ h2{
 
 .partners{
     display: flex;
-    width: 75%;
+    width: 100%;
     height: 50%;
-    margin: 100px 0px 0px 250px;
+    margin: 100px 0px;
     background-color: white;
     flex-direction: column;
-
-
+    align-items: center;
 }
+
 .partners-flex{
     display: flex;
-   
 }
 
 .partners-column{
-    width: 33%;
-    padding-right: 20px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .partners p{
@@ -128,7 +126,6 @@ h2{
     font-family: 'Hind Siliguri', sans-serif;
     color: #838383;
     margin: 0px 0px 12.5px;
-    
 }
 
 h3{
@@ -137,10 +134,6 @@ h3{
   font-family: 'Martel', serif;
   font-size: 24px;
   font-weight: bold;
-}
-
-.picture{
-margin-left: 25%;   
 }
 
 .social_icons{
@@ -160,8 +153,7 @@ margin-left: 25%;
     height: 30px;
     justify-content: center;
     align-items: center;  
-    transition: 0.2s;
-    
+    transition: 0.2s;  
 }
 
 .social_icons a{
@@ -176,29 +168,31 @@ margin-left: 25%;
     color: white;
 
 }
+
 .contact {
     width: 50vw;
     height: 40vh;
-    margin-left: 17%;
     display: flex;    
     position: absolute;
     background-color: white;
     box-shadow: 1px 2px 10px #838383;
 }
 
-.get_in_touch {
-    margin-top: 100px;
-}
-
 .get_in_touch img {
     position: absolute;
     width: 75vw;
     top: 100px;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .parent {
+    margin-top: 50px;
     position: relative;
-    height: 90vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .write_info{
@@ -296,6 +290,7 @@ input {
     position: relative;
     width: 1100px;
     height: 600px;
+    transition: all 0.3s;
 }
 
 .section-aboutus-content-carousel-photo img {
@@ -545,3 +540,14 @@ input[type=checkbox]:checked ~ label > img {
     background-color: #fff;
 }
 
+@media (max-width: 1200px) {
+    .section-aboutus-content-carousel {
+        width: 800px;
+        height: 800px;
+    }
+
+    .section-aboutus-content-frame {
+        width: 800px;
+    }
+
+}

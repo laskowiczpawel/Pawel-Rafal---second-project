@@ -47,7 +47,7 @@ nav img{
 
 .intro {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     text-align: center;
     color: white;
@@ -96,21 +96,19 @@ h2{
     
 .headline{
     text-align: center;
-    padding-bottom: 40px;
 }
 
 .partners{
     display: flex;
-    width: 100%;
-    height: 50%;
-    margin: 100px 0px;
-    background-color: white;
+    margin-top: 100px;
     flex-direction: column;
     align-items: center;
 }
 
 .partners-flex{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .partners-column{
@@ -118,6 +116,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
 
 .partners p{
@@ -189,7 +188,7 @@ h3{
 .parent {
     margin-top: 50px;
     position: relative;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,8 +275,9 @@ input {
     margin-bottom: 20px;
 }
 
-.section-aboutus-text, .section-customers-text {
-    width: 750px;
+.section-aboutus-text, 
+.section-customers-text {
+    width: 80%;
     text-align: center;
     font-size: 18px;
     color: #838383;
@@ -313,6 +313,7 @@ input {
     bottom: 0px;
     padding: 60px 40px;
     box-shadow: 0px 0px 20px 3px rgb(180, 180, 180);
+
 }
 
 .section-aboutus-content-frame-header-title {
@@ -325,6 +326,12 @@ input {
 .section-aboutus-content-frame-header {
     display: flex;
     justify-content: space-between;
+}
+
+.section-aboutus-content-frame-text {
+    color: #838383;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 .section-aboutus-content-frame-header-arrows {
@@ -360,9 +367,10 @@ input {
 
 .logos {
     display: grid;
-    grid-template-columns: 350px 350px 350px;
+    width: 100%;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
     padding: 50px 0px 50px 0px;
-    gap: 60px;
+    gap: 80px;
 }
 
 .logo {
@@ -371,6 +379,7 @@ input {
     opacity: 0.7;
     transition: all 0.3s;
     margin-bottom: 60px;
+    height: 47px;
 }
 
 .logo:hover {
@@ -378,7 +387,7 @@ input {
 }
 
 .footer img {
-    width: 100%;
+    width: 1920px;
 }
 
 .footer-text {
@@ -509,7 +518,7 @@ input[type=checkbox]:checked ~ label > img {
 }
 
 .footer1 img{
-    width: 100%;
+    width: 1920px;
 }
 
 .name span{
@@ -542,12 +551,156 @@ input[type=checkbox]:checked ~ label > img {
 
 @media (max-width: 1200px) {
     .section-aboutus-content-carousel {
-        width: 800px;
+        width: 80vw;
+        margin-top: 30px;
         height: 800px;
     }
 
-    .section-aboutus-content-frame {
-        width: 800px;
+    .section-aboutus-content-carousel-secondphoto,
+    .section-aboutus-content-carousel-photo,
+    .section-aboutus-content-carousel-secondphoto img,
+    .section-aboutus-content-carousel-photo img {
+        width: 100%;
+        max-width: unset;
     }
 
+    .section-aboutus-content-frame {
+        width: 100%;
+    }
+
+    .logos {
+        grid-template-columns: 1.2fr 1.2fr 1.2fr;
+        gap: 20px;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .section-aboutus-content-carousel {
+        width: 80vw;
+        margin-top: 30px;
+        height: 700px;
+    }
+
+    .partners .headline {
+        margin: 0px 40px;
+    }
+
+    .logos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .get_in_touch {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 30px;
+    }
+
+    .get_in_touch p {
+        width: 80%;
+    }
+
+    .parent {
+        height: 80vh;
+        overflow: hidden;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+
+    .parent img {
+        bottom: 0px;
+        top: unset;
+        width: 1000px;
+    }
+
+    .our_info {
+        width: 60%;
+        text-align: center;
+        padding: 20px 0px 40px 0px;
+    }
+
+    .write_info {
+        align-items: center;
+        width: 80%;
+    }
+
+    .field, .field_big {
+        width: 100%;
+    }
+
+    .get_in_touch .parent {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .contact {
+        width: 75vw;
+    }
+
+    .our_info {
+        width: 80vw;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-text {
+        top: 50px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .footer-icons {
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+        top: 120px;
+        right: unset;
+    }
+}
+
+@media (max-width: 610px) {
+    .section-aboutus-content-frame {
+        box-shadow: unset;
+        padding: 0px 10px;
+        margin-top: 40px;
+    }
+
+    .section-aboutus-content-carousel {
+        width: 80vw;
+        margin-top: 50px;
+        height: 600px;
+    }
+
+    .intro h1 {
+        font-size: 48px;
+    }
+
+    .get_in_touch .parent {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .contact {
+        width: 75vw;
+    }
+
+    .our_info {
+        width: 80vw;
+    }
 }

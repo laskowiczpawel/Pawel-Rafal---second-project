@@ -37,7 +37,7 @@ const nav = document.querySelector(".navigation_bar");
 const sectionOne = document.querySelector(".intro");
 
 const sectionOneOptions = {
-    rootMargin: "-300px 0px 0px 0px"
+    rootMargin: "0px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver){

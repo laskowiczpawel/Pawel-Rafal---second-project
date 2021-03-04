@@ -493,10 +493,14 @@ input {
 }
 
 @media  (max-width: 800px){
+.container {
+    width: 98%;
+}
+
   
 .more{
     margin-top: 100px;
-    grid-template-columns: 1% 1fr 1%;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 80%;
     margin-bottom: 50px;
     padding-left: 2%;
@@ -525,9 +529,6 @@ input {
 .footer img {
     height: 20vh;
     object-fit: cover;
-
-.footer1 img{
-    width: 1920px;
 }
 
 .footer-text {

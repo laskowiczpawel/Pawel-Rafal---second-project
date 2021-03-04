@@ -85,10 +85,6 @@ nav p{
     color: white;
 }
 
-svg{
-    top: 50px;
-}
-
 h2{
     font-size: 28px;
     font-family: 'Martel', sans-serif;
@@ -96,10 +92,10 @@ h2{
     text-align: center;
     line-height: 30px;
     font-weight: 900;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     }
     
-.headline{
+    .headline{
     text-align: center;
 }
 
@@ -410,14 +406,14 @@ input {
     top: 90px;
     right: 200px;
     display: flex;
-    gap: 30px;
+    gap: 5px;
 }
 
 .section-social-columns-column {
     border-radius: 60px;
-    border: 2px solid white;
-    width: 40px;
-    height: 40px;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -479,15 +475,6 @@ input {
     cursor: zoom-in;
 }
 
-input[type=checkbox] {
-    display: none;
-}
-
-input[type=checkbox]:checked ~ label > img {
-    transform: scale(1.5);
-    cursor: zoom-out;
-}
-
 .more span{
     font-size: 18px;
     font-family: 'Hind Siliguri', sans-serif;
@@ -502,56 +489,77 @@ input[type=checkbox]:checked ~ label > img {
     font-family: 'Martel', snas-serif;
     font-weight: 900;
     font-size: 24px;
+    margin-bottom: 110px;
 }
 
-.name{
-    top: 200px;
-    position: relative;
-    color: white;
-    margin-left: 250px;
+@media  (max-width: 800px){
+  
+.more{
+    margin-top: 100px;
+    grid-template-columns: 1% 1fr 1%;
+    grid-template-rows: 1fr 80%;
+    margin-bottom: 50px;
+    padding-left: 2%;
 }
 
-.name a{
-    text-decoration: none;
-    color: white;
+.row_1{
+    grid-column-start:2;
+    grid-row-start: 1;
+    width: 98%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-/* FOOTER */
-
-.footer_box{
-    box-sizing: content-box;
+.row_2{
+    grid-column-start:2;
+    grid-row-start: 2;
+    width: 98%;
 }
+
+.more img{
+    width: 100%;
+    transition: transform 0.25s ease;
+    cursor: zoom-in;
+}
+
+.footer img {
+    height: 20vh;
+    object-fit: cover;
 
 .footer1 img{
     width: 1920px;
 }
 
-.name span{
-    font-size: 24px;
-    font-family: 'Martel', sans-serif;
+.footer-text {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    color: white;
+    font-family: 'Martel', serif;
     font-weight: 900;
+    font-size: 25px;
 }
 
-.name p{
-    font-size: 14;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 300;
+.footer-icons {
+    position: absolute;
+    top: 42%;
+    right: 15%;
+    display: flex;
+    gap: 5px;
+}
+    
 }
 
-.footer1 .social_icons{
-    top: 150px;
-    position: relative;
-    margin-left: 1000px;
+@media  (max-width: 400px){
+ .footer-text{
+    left: 5%;
+ }
+
+ .footer-icons {
+    top: 60%; 
+    right: 5%;
 }
 
-.footer1 .social_icons i{
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.footer1 .social_icons i:hover{
-    color: #1763E9;
-    background-color: #fff;
 }
 
 @media (max-width: 1200px) {
@@ -709,3 +717,4 @@ input[type=checkbox]:checked ~ label > img {
         width: 80vw;
     }
 }
+
